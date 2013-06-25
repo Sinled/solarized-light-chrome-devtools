@@ -166,7 +166,9 @@ li.hovered:not(.selected) .selection {
   color: #268bd2 !important; }
 
 .webkit-css-property {
-  color: #002b36 !important; }
+  color: #b58900 !important;
+  font-weight: bold !important;
+  font-style: italic !important; }
 
 .webkit-css-keyword {
   color: #2aa198 !important; }
@@ -218,8 +220,9 @@ li.hovered:not(.selected) .selection {
  */
 .webkit-html-external-link,
 .webkit-html-resource-link {
-  color: #b58900 !important;
-  text-decoration: none !important; }
+  color: #586e75 !important;
+  text-decoration: none !important;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
 
 #elements-sidebar {
   background: #fdf6e3 !important; }
@@ -243,14 +246,14 @@ li.hovered:not(.selected) .selection {
 
 .webkit-html-external-link,
 .webkit-html-resource-link {
-  color: #859900 !important;
+  color: #586e75 !important;
   text-decoration: none !important; }
 
 .webkit-css-property,
 .webkit-css-at-rule,
 .webkit-formatted-string,
 .console-formatted-regexp {
-  color: #dc322f !important; }
+  color: #b58900 !important; }
 
 .styles-section.read-only > * {
   background-color: #fdf6e3 !important; }
@@ -291,6 +294,10 @@ li.hovered:not(.selected) .selection {
 
 .styles-section.matched-styles .properties li.parent.expanded .expand-element {
   content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important; }
+
+.selector-matches {
+  color: #268bd2 !important;
+  font-weight: bold !important; }
 
 /**
  * Suggest-box
@@ -347,9 +354,9 @@ body#-webkit-web-inspector,
   .webkit-line-gutter-backdrop + table .webkit-line-number,
   .webkit-line-gutter-backdrop + table .webkit-line-content,
   .webkit-line-gutter-backdrop + table #elements-sidebar .child-editing {
-    font-family: Inconsolata, monospace !important;
+    font-family: Consolas, monospace !important;
     font-size: 12px !important;
-    color: #657b83 !important; }
+    color: #859900 !important; }
   body#-webkit-web-inspector .webkit-html-content,
   .webkit-line-gutter-backdrop .webkit-html-content,
   .webkit-line-gutter-backdrop + table .webkit-html-content {
@@ -362,11 +369,12 @@ body#-webkit-web-inspector,
   body#-webkit-web-inspector .webkit-html-attribute-name,
   .webkit-line-gutter-backdrop .webkit-html-attribute-name,
   .webkit-line-gutter-backdrop + table .webkit-html-attribute-name {
-    color: #2aa198 !important; }
+    color: #93a1a1 !important;
+    font-weight: normal !important; }
   body#-webkit-web-inspector .webkit-html-attribute-value,
   .webkit-line-gutter-backdrop .webkit-html-attribute-value,
   .webkit-line-gutter-backdrop + table .webkit-html-attribute-value {
-    color: #586e75 !important;
+    color: #2aa198 !important;
     font-weight: normal !important; }
   body#-webkit-web-inspector .webkit-html-css-node,
   .webkit-line-gutter-backdrop .webkit-html-css-node,
@@ -380,3 +388,11 @@ body#-webkit-web-inspector,
   .webkit-line-gutter-backdrop .webkit-html-external-link,
   .webkit-line-gutter-backdrop + table .webkit-html-external-link {
     color: #d33682 !important; }
+
+.cm-s-web-inspector-css .cm-meta,
+.cm-s-web-inspector-css .cm-property {
+  color: #b58900 !important;
+  font-weight: bold !important;
+  font-style: italic !important; }
+.cm-s-web-inspector-css .cm-string-2 {
+  color: #859900 !important; }
