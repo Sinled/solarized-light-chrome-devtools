@@ -253,7 +253,9 @@ li.hovered:not(.selected) .selection {
 }
 
 .webkit-css-property {
-  color: $base03 !important;
+  color: $yellow !important;
+  font-weight: bold !important;
+  font-style: italic !important;
 }
 
 .webkit-css-keyword {
@@ -322,8 +324,9 @@ li.hovered:not(.selected) .selection {
 
 .webkit-html-external-link,
 .webkit-html-resource-link {
-  color: $yellow !important; // c?
+  color: $base01 !important; // c?
   text-decoration: none !important;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 
 #elements-sidebar {
@@ -354,7 +357,7 @@ li.hovered:not(.selected) .selection {
 
 .webkit-html-external-link,
 .webkit-html-resource-link {
-  color: $green !important; // c?
+  color: $base01 !important; // c?
   text-decoration: none !important;
 }
 
@@ -362,7 +365,7 @@ li.hovered:not(.selected) .selection {
 .webkit-css-at-rule,
 .webkit-formatted-string,
 .console-formatted-regexp {
-  color: $red !important; // c?
+  color: $yellow !important; // c?
 }
 
 .styles-section.read-only > * {
@@ -415,6 +418,11 @@ li.hovered:not(.selected) .selection {
   content: url(chrome-devtools://devtools/Images/treeDownTriangleWhite.png) !important;
 }
 
+
+.selector-matches {
+  color: $blue !important; // c?
+  font-weight: bold !important;
+}
 /**
  * Suggest-box
  */
@@ -464,9 +472,9 @@ body#-webkit-web-inspector,
   .webkit-line-number,
   .webkit-line-content,
   #elements-sidebar .child-editing {
-    font-family: Inconsolata, monospace !important;
+    font-family: Consolas, monospace !important;
     font-size: 12px !important;
-    color: $base00 !important;
+    color: $green !important;
   }
 
   /**
@@ -480,10 +488,11 @@ body#-webkit-web-inspector,
     font-weight: bold !important;
   }
   .webkit-html-attribute-name {
-    color: $cyan !important; // c?
+    color: $base1 !important; // c?
+    font-weight: normal !important;
   }
   .webkit-html-attribute-value {
-    color: $base01 !important; // c?
+    color: $cyan !important; // c?
     font-weight: normal !important;
   }
   .webkit-html-css-node {
@@ -494,5 +503,18 @@ body#-webkit-web-inspector,
   }
   .webkit-html-external-link {
     color: $magenta !important;
+  }
+}
+
+.cm-s-web-inspector-css {
+  .cm-meta,
+  .cm-property {
+    color: $yellow !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+  }
+
+  .cm-string-2 {
+    color: $green !important;
   }
 }
